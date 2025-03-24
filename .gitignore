@@ -1,0 +1,24 @@
+# React Logs
+React/logs
+React/*.log
+React/npm-debug.log*
+React/yarn-debug.log*
+React/yarn-error.log*
+React/pnpm-debug.log*
+React/lerna-debug.log*
+
+React/node_modules
+React/dist
+React/dist-ssr
+React/*.local
+
+# React editor directories and files
+React/.vscode/*
+React/!.vscode/extensions.json
+React/.idea
+React/.DS_Store
+React/*.suo
+React/*.ntvs*
+React/*.njsproj
+React/*.sln
+React/*.sw?
