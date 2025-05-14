@@ -1,0 +1,1 @@
+Licencja wykorzystanego UI https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE
