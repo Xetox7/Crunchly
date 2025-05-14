@@ -1,12 +1,12 @@
 import NavBar from '../components/NavBar';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
+import RegisterSection from '../components/RegisterSection';
 
 function Register(){
     return(
         <>
             <NavBar />
-            <RegisterForm/>
+            <RegisterSection/>
             <Footer/>
         </>
         )

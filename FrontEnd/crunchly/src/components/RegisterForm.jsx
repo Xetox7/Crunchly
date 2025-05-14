@@ -32,10 +32,10 @@ function RegisterForm(){
                                 <label for="rpt_password">Powtórz hasło</label>
                             </div>
                             <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                                <div class="text-center text-danger mb-3">Błąd przy wysyłaniu formularza!</div>
                             </div>
                             <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
-                                    type="submit">Submit</button></div>
+                                    type="submit">Wyślij</button></div>
                         </form>
                     </div>
                 </div>
