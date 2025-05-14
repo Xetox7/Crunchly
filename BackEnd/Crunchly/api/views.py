@@ -5,5 +5,15 @@ from .models import User
 from .serializer import UserSerializer
 
 @api_view(['GET'])
-def get_user(request):
-    return Response(UserSerializer({'Username':"pedro", 'Email':"pedro123@gmail.com",'BirthDate':"10/25/2006",'Password':"duduś"}).data)
+def get_users(request):
+    users = User.objects.all()
+    serializer = UserSerializer(users, many=True)
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def create_user(request):
+    serializer = UserSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status.HTTP_201_CREATED)
+    return Response(serializer.errors,status.HTTP_400_BAD_REQUEST)
