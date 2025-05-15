@@ -1,11 +1,11 @@
 from django.db import models
+from django.contrib.auth import get_user_model
 
-# Create your models here.
-class User(models.Model):
-    Username = models.CharField()
-    Email = models.CharField()
+User = get_user_model() 
+
+class UserData(models.Model):
+    UserId = models.ForeignKey(User, on_delete=models.CASCADE)  
     BirthDate = models.DateField()
-    Password = models.CharField()
 
     def __str__(self):
-        return self.name
+        return str(self.UserId) 
